@@ -5,7 +5,7 @@
 ## Build Setup
 
 ``` bash
-#download this repo and unzip wb2018-master.zip
+#download and unzip repo
 double-click to unzip sans-movies-master.unzip or use an unzip program of your choice
 
 #change to the project directory

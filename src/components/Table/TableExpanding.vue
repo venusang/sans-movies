@@ -41,20 +41,21 @@ export default {
   name: 'TableExpanding',
   props: {
     movies: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
+  data: {
+    isExpanded: false,
+  },
   methods: {
     showDetails: (evt) => {
+      this.isExpanded = !this.isExpanded;
       const elementIdName = evt.currentTarget.getAttribute('aria-controls');
-      let elementVisibility = document.getElementById(elementIdName).getAttribute('aria-hidden');
-      if (elementVisibility) {
+      if (this.isExpanded) {
         document.getElementById(elementIdName).setAttribute('aria-hidden', false);
-        elementVisibility = false;
       } else {
         document.getElementById(elementIdName).setAttribute('aria-hidden', true);
-        elementVisibility = true;
       }
     },
   },

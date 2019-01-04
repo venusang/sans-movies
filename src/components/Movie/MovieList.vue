@@ -2,7 +2,7 @@
   <div class="movie">
     <h1>All Movies</h1>
     <div class="table-wrapper">
-      <TableSortable :movies="movies" />
+      <TableExpanding :movies="movies" />
     </div>
   </div>
 </template>

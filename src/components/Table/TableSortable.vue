@@ -2,7 +2,7 @@
   <table class="p-table--sortable p-table--mobile-card" role="grid">
     <thead>
       <tr role="row">
-        <th v-on:click="sortColumn" scope="col" role="columnheader" id="t-title" :aria-sort="sortSetting">Title</th>
+        <th v-on:click="sortColumn" scope="col" role="columnheader" id="t-title" aria-sort="none">Title</th>
         <th scope="col" role="columnheader" id="t-tagline" aria-label="Tagline" aria-sort="none" class="u-align--left">Tagline</th>
         <th scope="col" role="columnheader" id="t-runtime" aria-label="Runtime" aria-sort="none" class="u-align--left">Runtime</th>
         <th scope="col" role="columnheader" id="t-release-date" aria-label="Release Date" aria-sort="none" class="u-align--left">Release<br />Date</th>
@@ -31,23 +31,11 @@ export default {
   name: 'TableSortable',
   props: {
     movies: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
   methods: {
-    showDetails: (evt) => {
-      const elementIdName = evt.currentTarget.getAttribute('aria-controls');
-      let elementVisibility = document.getElementById(elementIdName).getAttribute('aria-hidden');
-      if (elementVisibility) {
-        document.getElementById(elementIdName).setAttribute('aria-hidden', false);
-        elementVisibility = false;
-      } else {
-        console.log('FALSE!');
-        document.getElementById(elementIdName).setAttribute('aria-hidden', true);
-        elementVisibility = true;
-      }
-    },
     sortColumn: (evt) => {
       const sort = evt.currentTarget.getAttribute('aria-sort');
       if (sort === 'none') {

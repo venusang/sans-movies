@@ -7,6 +7,7 @@
         <div class="thumbnail__description"><a class="p-matrix__link" :href="`/movie/${movie.id}`">{{ movie.original_title }}</a></div>
       </div>
     </carousel>
+    <a href="/movies" class="p-button--brand">View All Movies</a>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Navigation />
+    <Form />
     <div class="row">
-      <Form />
       <router-view></router-view>
     </div>
   </div>

@@ -2,8 +2,8 @@
   <div class="carousel">
     <carousel :pullDrag="true" :margin="20" :autoplay="true" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false}}">
       <div class="thumbnail" v-for="movie in movies">
-        <img class="thumbnail__image" v-bind:src="require(`../assets/${movie.thumbnail}`)" :alt="`${movie.alt}`"/>
-        <div class="thumbnail__description">{{ movie.title }}</div>
+        <a class="p-matrix__link" :href="`/movie/${movie.id}`"><img class="thumbnail__image" v-bind:src="require(`../assets/${movie.thumbnail}`)" :alt="`${movie.alt}`"/></a>
+        <div class="thumbnail__description"><a class="p-matrix__link" :href="`/movie/${movie.id}`">{{ movie.original_title }}</a></div>
       </div>
     </carousel>
   </div>
@@ -26,6 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 .thumbnail {
+  height: 600px;
   &__description {
     height: 50%;
     text-align: left;

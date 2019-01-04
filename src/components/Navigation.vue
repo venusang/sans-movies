@@ -3,7 +3,7 @@
     <div class="p-navigation__banner">
       <div class="p-navigation__logo">
         <a class="p-navigation__link" href="/">
-          <img class="p-navigation__image logo" src="/static/sanslogo-blue.png" alt="" width="95">
+          <img class="p-navigation__image logo" src="/static/sanslogo-white.png" alt="" width="95">
         </a>
       </div>
       <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
@@ -15,7 +15,7 @@
       </span>
       <ul class="p-navigation__links" role="menu">
         <li class="p-navigation__link is-selected" role="menuitem">
-          <a href="/movies">Movie Listings</a>
+          <a href="/movies">Movies</a>
         </li>
       </ul>
     </nav>
@@ -29,4 +29,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .p-navigation {
+    background-color: #213242;
+  }
+  .p-navigation__links a {
+    color: #ffffff;
+  }
 </style>

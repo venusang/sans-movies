@@ -1,19 +1,19 @@
 <template>
   <div class="movie">
-    <TableExpand :movies="movies" />
-    <TableSortable :movies="movies" />
+    <TableExpanding :movies="movies" />
+    <!-- <TableSortable :movies="movies" /> -->
   </div>
 </template>
 
 <script>
 import json from '../../api/movie-listings.json';
-import TableExpand from '../Table/TableExpand';
+import TableExpanding from '../Table/TableExpanding';
 import TableSortable from '../Table/TableSortable';
 
 export default {
   name: 'MovieList',
   components: {
-    TableExpand,
+    TableExpanding,
     TableSortable,
   },
   data() {

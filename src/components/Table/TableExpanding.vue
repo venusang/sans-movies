@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: 'TableExpand',
+  name: 'TableExpanding',
   props: {
     movies: {
       type: Object,

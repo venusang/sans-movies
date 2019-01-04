@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.carousel {
+  width: 500px;
+}
 .thumbnail {
   &__description {
     height: 50%;

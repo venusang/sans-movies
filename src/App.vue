@@ -3,8 +3,10 @@
     <Navigation />
 
     <div class="row">
-      <div class="col-5"><FormStacked /></div>
-      <div class="col-7"><router-view></router-view></div>
+      <div class="u-equal-height">
+        <div class="col-5 p-card"><FormStacked /></div>
+        <div class="col-7 p-card"><router-view></router-view></div>
+      </div>
     </div>
   </div>
 </template>

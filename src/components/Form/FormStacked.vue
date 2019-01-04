@@ -1,5 +1,5 @@
 <template>
-  <div class="p-card">
+  <div class="form-stacked">
     <h3>Add New Movie</h3>
     <form>
       <label for="title">Title</label>

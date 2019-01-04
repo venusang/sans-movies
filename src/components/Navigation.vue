@@ -3,7 +3,7 @@
     <div class="p-navigation__banner">
       <div class="p-navigation__logo">
         <a class="p-navigation__link" href="/">
-          <img class="p-navigation__image logo" src="/static/sanslogo-white.png" alt="" width="95">
+          <img class="p-navigation__image logo" src="/static/sanslogo-blue.png" alt="" width="95">
         </a>
       </div>
       <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
@@ -30,9 +30,6 @@ export default {
 
 <style lang="scss" scoped>
   .p-navigation {
-    background-color: #213242;
-  }
-  .p-navigation__links a {
-    color: #ffffff;
+    margin-bottom: 10px;
   }
 </style>

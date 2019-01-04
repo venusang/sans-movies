@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <Navigation />
+    <Form />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Navigation from '@/components/Navigation';
+import Form from '@/components/Form';
 
 export default {
   name: 'app',
   components: {
     Navigation,
+    Form,
   },
 };
 </script>

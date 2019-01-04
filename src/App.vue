@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <Navigation />
-    <Form />
-    <router-view></router-view>
+    <div class="row">
+      <Form />
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 

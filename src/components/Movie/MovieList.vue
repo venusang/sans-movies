@@ -1,5 +1,5 @@
 <template>
-  <div class="movie" >
+  <div class="movie">
     <TableExpand :movies="movies" />
     <TableSortable :movies="movies" />
   </div>

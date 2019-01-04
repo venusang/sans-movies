@@ -6,10 +6,10 @@
 
 ``` bash
 #download this repo and unzip wb2018-master.zip
-double-click to unzip movies-master.unzip or use an unzip program of your choice
+double-click to unzip sans-movies-master.unzip or use an unzip program of your choice
 
 #change to the project directory
-cd movies
+cd sans-movies-master
 
 # install dependencies
 npm install

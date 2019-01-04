@@ -1,5 +1,6 @@
 [
   {
+    "thumbnail": "avatar.jpg",
     "genres": "[{\"id\": 28, \"name\": \"Action\"}, {\"id\": 12, \"name\": \"Adventure\"}, {\"id\": 14, \"name\": \"Fantasy\"}, {\"id\": 878, \"name\": \"Science Fiction\"}]",
     "homepage": "http://www.avatarmovie.com/",
     "id": "19995",
@@ -20,6 +21,7 @@
     "vote_count": "11800"
   },
   {
+    "thumbnail": "pirates-caribbean.jpg",
     "genres": "[{\"id\": 12, \"name\": \"Adventure\"}, {\"id\": 14, \"name\": \"Fantasy\"}, {\"id\": 28, \"name\": \"Action\"}]",
     "homepage": "http://disney.go.com/disneypictures/pirates/",
     "id": "285",
@@ -40,6 +42,7 @@
     "vote_count": "4500"
   },
   {
+    "thumbnail": "spectre.jpg",
     "genres": "[{\"id\": 28, \"name\": \"Action\"}, {\"id\": 12, \"name\": \"Adventure\"}, {\"id\": 80, \"name\": \"Crime\"}]",
     "homepage": "http://www.sonypictures.com/movies/spectre/",
     "id": "206647",
@@ -60,6 +63,7 @@
     "vote_count": "4466"
   },
   {
+    "thumbnail": "dark-knight.jpg",
     "genres": "[{\"id\": 28, \"name\": \"Action\"}, {\"id\": 80, \"name\": \"Crime\"}, {\"id\": 18, \"name\": \"Drama\"}, {\"id\": 53, \"name\": \"Thriller\"}]",
     "homepage": "http://www.thedarkknightrises.com/",
     "id": "49026",
@@ -80,6 +84,7 @@
     "vote_count": "9106"
   },
   {
+    "thumbnail": "john-carter.jpg",
     "genres": "[{\"id\": 28, \"name\": \"Action\"}, {\"id\": 12, \"name\": \"Adventure\"}, {\"id\": 878, \"name\": \"Science Fiction\"}]",
     "homepage": "http://movies.disney.com/john-carter",
     "id": "49529",
@@ -100,6 +105,7 @@
     "vote_count": "2124"
   },
   {
+    "thumbnail": "spiderman-3.jpg",
     "genres": "[{\"id\": 14, \"name\": \"Fantasy\"}, {\"id\": 28, \"name\": \"Action\"}, {\"id\": 12, \"name\": \"Adventure\"}]",
     "homepage": "http://www.sonypictures.com/movies/spider-man3/",
     "id": "559",
@@ -120,6 +126,7 @@
     "vote_count": "3576"
   },
   {
+    "thumbnail": "tangled.jpg",
     "genres": "[{\"id\": 16, \"name\": \"Animation\"}, {\"id\": 10751, \"name\": \"Family\"}]",
     "homepage": "http://disney.go.com/disneypictures/tangled/",
     "id": "38757",
@@ -140,6 +147,7 @@
     "vote_count": "3330"
   },
   {
+    "thumbnail": "age-of-ultron.jpg",
     "genres": "[{\"id\": 28, \"name\": \"Action\"}, {\"id\": 12, \"name\": \"Adventure\"}, {\"id\": 878, \"name\": \"Science Fiction\"}]",
     "homepage": "http://marvel.com/movies/movie/193/avengers_age_of_ultron",
     "id": "99861",
@@ -160,6 +168,7 @@
     "vote_count": "6767"
   },
   {
+    "thumbnail": "hp-half-blood-prince.jpg",
     "genres": "[{\"id\": 12, \"name\": \"Adventure\"}, {\"id\": 14, \"name\": \"Fantasy\"}, {\"id\": 10751, \"name\": \"Family\"}]",
     "homepage": "http://harrypotter.warnerbros.com/harrypotterandthehalf-bloodprince/dvd/index.html",
     "id": "767",
@@ -180,6 +189,7 @@
     "vote_count": "5293"
   },
   {
+    "thumbnail": "superman-batman.jpg",
     "genres": "[{\"id\": 28, \"name\": \"Action\"}, {\"id\": 12, \"name\": \"Adventure\"}, {\"id\": 14, \"name\": \"Fantasy\"}]",
     "homepage": "http://www.batmanvsupermandawnofjustice.com/",
     "id": "209112",
@@ -200,6 +210,7 @@
     "vote_count": "7004"
   },
   {
+    "thumbnail": "quantum-of-solace.jpg",
     "genres": "[{\"id\": 12, \"name\": \"Adventure\"}, {\"id\": 28, \"name\": \"Action\"}, {\"id\": 53, \"name\": \"Thriller\"}, {\"id\": 80, \"name\": \"Crime\"}]",
     "homepage": "http://www.mgm.com/view/movie/234/Quantum-of-Solace/",
     "id": "10764",

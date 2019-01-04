@@ -2,7 +2,7 @@
   <div class="movie" >
     <ul class="p-matrix u-clearfix">
       <li v-for="movie in movies" class="p-matrix__item">
-        <!-- <img class="p-matrix__img" v-bind:src="require(`../assets/${movie.imgUrl}`)" :alt="`${movie.alt}`"/> -->
+        <img v-if="movie.thumbnail" class="p-matrix__img" v-bind:src="require(`../../assets/${movie.thumbnail}`)" :alt="`${movie.alt}`"/>
         <div class="p-matrix__content">
           <h3 class="p-matrix__title"><a class="p-matrix__link" :href="`${movie.homepage}`">{{ movie.original_title }}</a></h3>
           <div class="p-matrix__desc">

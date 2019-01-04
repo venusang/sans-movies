@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: 'Form',
+  name: 'FormInline',
 };
 </script>
 

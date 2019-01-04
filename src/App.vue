@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navigation />
-    <Form />
+    <FormInline />
     <div class="row">
       <router-view></router-view>
     </div>
@@ -10,13 +10,13 @@
 
 <script>
 import Navigation from '@/components/Navigation';
-import Form from '@/components/Form';
+import FormInline from '@/components/Form/FormInline';
 
 export default {
   name: 'app',
   components: {
     Navigation,
-    Form,
+    FormInline,
   },
 };
 </script>

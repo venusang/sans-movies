@@ -1,7 +1,7 @@
 <template>
   <div class="movie">
-    <TableExpanding :movies="movies" />
-    <!-- <TableSortable :movies="movies" /> -->
+    <!-- <TableExpanding :movies="movies" /> -->
+    <TableSortable :movies="movies" />
   </div>
 </template>
 

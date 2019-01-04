@@ -57,18 +57,6 @@ export default {
         elementVisibility = true;
       }
     },
-    sortColumn: (evt) => {
-      const sort = evt.currentTarget.getAttribute('aria-sort');
-      if (sort === 'none') {
-        evt.currentTarget.setAttribute('aria-sort', 'ascending');
-      }
-      if (sort === 'ascending') {
-        evt.currentTarget.setAttribute('aria-sort', 'descending');
-      }
-      if (sort === 'descending') {
-        evt.currentTarget.setAttribute('aria-sort', 'ascending');
-      }
-    },
   },
 };
 </script>

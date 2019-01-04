@@ -2,12 +2,12 @@
   <table class="p-table--sortable p-table--mobile-card" role="grid">
     <thead>
       <tr role="row">
-        <th v-on:click="sortColumn" scope="col" role="columnheader" id="t-name" :aria-sort="sortSetting">Title</th>
-        <th scope="col" role="columnheader" id="t-users" aria-sort="none" class="u-align--left">Tagline</th>
-        <th scope="col" role="columnheader" id="t-units" aria-sort="none" class="u-align--left">Runtime</th>
-        <th scope="col" role="columnheader" id="t-revenue" aria-sort="none" class="u-align--left">Release Date</th>
-        <th scope="col" role="columnheader" id="t-revenue" aria-sort="none" class="u-align--left">Vote Average</th>
-        <th scope="col" role="columnheader" id="t-revenue" aria-sort="none" class="u-align--left">Actions</th>
+        <th v-on:click="sortColumn" scope="col" role="columnheader" id="t-title" :aria-sort="sortSetting">Title</th>
+        <th scope="col" role="columnheader" id="t-tagline" aria-label="Tagline" aria-sort="none" class="u-align--left">Tagline</th>
+        <th scope="col" role="columnheader" id="t-runtime" aria-label="Runtime" aria-sort="none" class="u-align--left">Runtime</th>
+        <th scope="col" role="columnheader" id="t-release-date" aria-label="Release Date" aria-sort="none" class="u-align--left">Release Date</th>
+        <th scope="col" role="columnheader" id="t-rating" aria-label="Rating" aria-sort="none" class="u-align--left">Rating</th>
+        <th scope="col" role="columnheader" id="t-actions" aria-label="Actions" aria-sort="none" class="u-align--left">Actions</th>
       </tr>
     </thead>
     <tbody>

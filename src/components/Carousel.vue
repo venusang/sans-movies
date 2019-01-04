@@ -1,5 +1,6 @@
 <template>
   <div class="carousel">
+    <h1>Featured Movies</h1>
     <carousel :pullDrag="true" :margin="20" :autoplay="true" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false}}">
       <div class="thumbnail" v-for="movie in movies">
         <a class="p-matrix__link" :href="`/movie/${movie.id}`"><img class="thumbnail__image" v-bind:src="require(`../assets/${movie.thumbnail}`)" :alt="`${movie.alt}`"/></a>
@@ -26,7 +27,6 @@ export default {
 
 <style lang="scss" scoped>
 .thumbnail {
-  height: 600px;
   &__description {
     height: 50%;
     text-align: left;

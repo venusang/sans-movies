@@ -1,19 +1,14 @@
 <template>
   <div class="movie-page" >
-    <section class="p-strip--dark is-light">
       <div class="row">
-          <div class="col-6">
+          <div class="col-12">
             <h2>{{movie.title}}</h2>
             <p>{{movie.tagline}}</p>
             <p>{{movie.overview}}</p>
             <p>{{movie.release_date}}</p>
-          </div>
-          <div class="col-6">
-              <img src="https://via.placeholder.com/1024x600" alt="">
+            <p><img src="https://via.placeholder.com/1024x600" alt=""></p>
           </div>
       </div>
-    </section>
-
   </div>
 </template>
 
@@ -38,5 +33,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>

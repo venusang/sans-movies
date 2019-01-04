@@ -1,7 +1,9 @@
 <template>
   <div class="movie">
-    <!-- <TableExpanding :movies="movies" /> -->
-    <TableSortable :movies="movies" />
+    <h1>All Movies</h1>
+    <div class="table-wrapper">
+      <TableSortable :movies="movies" />
+    </div>
   </div>
 </template>
 
@@ -25,4 +27,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .table-wrapper {
+    width: 100%;
+    height: 500px;
+    overflow-x:hidden;
+    overflow-y: scroll;
+  }
 </style>

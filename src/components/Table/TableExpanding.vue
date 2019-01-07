@@ -15,7 +15,7 @@
               <td role="gridcell" aria-label="Date" class="u-align--right">{{movie.release_date}}</td>
               <td role="gridcell" aria-label="Runtime" class="u-align--right">{{movie.runtime}}</td>
               <td role="gridcell" class="u-align--right">
-                  <button v-on:click="showDetails" class="u-toggle" :aria-controls="`expanded-row-${movie.id}`" aria-expanded="false" data-shown-text="Hide" data-hidden-text="Show">Show</button>
+                  <button v-on:click="showMovieDetails" class="u-toggle" :id="`button-${movie.id}`" :aria-controls="`expanded-row-${movie.id}`" aria-expanded="false" data-shown-text="Hide" data-hidden-text="Show">Show</button>
               </td>
               <td :id="`expanded-row-${movie.id}`" class="p-table-expanding__panel" aria-hidden="true">
                   <div class="row">
@@ -45,17 +45,37 @@ export default {
       required: true,
     },
   },
-  data: {
-    isExpanded: false,
+  data() {
+    return {
+      isExpanded: false,
+      theDetailsId: '',
+      theDetailsButtonId: '',
+    };
   },
   methods: {
-    showDetails: (evt) => {
+    showMovieDetails: (evt) => {
+      const currentTargetId = evt.currentTarget.getAttribute('aria-controls');
+      const currentButtonId = evt.currentTarget.getAttribute('id');
+      const lastTargetId = document.getElementById(this.DetailsId);
+      const lastButtonId = document.getElementById(this.theDetailsButtonId);
+      const movieDetails = document.getElementById(currentTargetId);
+      const buttonText = evt.currentTarget;
+
+      if (lastTargetId) {
+        lastTargetId.setAttribute('aria-hidden', true);
+        lastButtonId.innerHTML = lastButtonId.getAttribute('data-hidden-text');
+      }
       this.isExpanded = !this.isExpanded;
-      const elementIdName = evt.currentTarget.getAttribute('aria-controls');
+      this.DetailsId = currentTargetId;
+      this.theDetailsButtonId = currentButtonId;
+
       if (this.isExpanded) {
-        document.getElementById(elementIdName).setAttribute('aria-hidden', false);
+        movieDetails.setAttribute('aria-hidden', false);
+        buttonText.innerHTML = buttonText.getAttribute('data-shown-text');
       } else {
-        document.getElementById(elementIdName).setAttribute('aria-hidden', true);
+        console.log('isExpanded is false');
+        movieDetails.setAttribute('aria-hidden', true);
+        buttonText.innerHTML = buttonText.getAttribute('data-hidden-text');
       }
     },
   },

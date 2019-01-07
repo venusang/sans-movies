@@ -29,4 +29,7 @@ describe('Carousel.vue', () => {
   it('renders the carousel navigation dots', () => {
     expect(wrapper.find('.owl-dots').exists());
   });
+  it('renders the view all movies button', () => {
+    expect(wrapper.find('.p-button--brand').exists());
+  });
 });

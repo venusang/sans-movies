@@ -73,7 +73,6 @@ export default {
         movieDetails.setAttribute('aria-hidden', false);
         buttonText.innerHTML = buttonText.getAttribute('data-shown-text');
       } else {
-        console.log('isExpanded is false');
         movieDetails.setAttribute('aria-hidden', true);
         buttonText.innerHTML = buttonText.getAttribute('data-hidden-text');
       }

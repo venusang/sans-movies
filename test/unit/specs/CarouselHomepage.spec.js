@@ -1,7 +1,7 @@
 import { shallow } from 'vue-test-utils';
-import Carousel from '@/components/Carousel';
+import CarouselHomepage from '@/components/Carousel/CarouselHomepage';
 
-describe('Carousel.vue', () => {
+describe('/Carousel/CarouselHome.vue', () => {
   const json = {
     photos: [{
       imageUrl: '01.jpg',
@@ -14,7 +14,7 @@ describe('Carousel.vue', () => {
     }],
   };
 
-  const wrapper = shallow(Carousel, {
+  const wrapper = shallow(CarouselHomepage, {
     propsData: { photos: json.photos },
   });
   it('renders the carousel', () => {

@@ -13,11 +13,11 @@
 
 <script>
 import carousel from 'vue-owl-carousel';
-import json from '../api/film.json';
+import json from '../../api/film.json';
 
 export default {
   components: { carousel },
-  name: 'Carousel',
+  name: 'CarouselHomepage',
   data() {
     return {
       movies: json,
@@ -27,13 +27,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.carousel {
-  width: 500px;
-}
-.thumbnail {
-  &__description {
-    height: 50%;
-    text-align: left;
-  }
-}
 </style>

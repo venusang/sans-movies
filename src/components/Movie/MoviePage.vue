@@ -24,13 +24,8 @@
               </tr>
               </tbody>
             </table>
-            <div class="carousel">
-              <carousel :pullDrag="true" :margin="20" :autoplay="true" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false}}">
-                <div class="thumbnail" v-for="thumbnail in movie.Images">
-                  <img :src="`${ thumbnail }`" />
-                </div>
-              </carousel>
-              <a href="/movies" class="p-button--brand">View All Movies</a>
+            <CarouselMovie :thumbnails="movie.Images" />
+            <a href="/movies" class="p-button--brand">View All Movies</a>
             </div>
           </div>
       </div>
@@ -38,12 +33,14 @@
 </template>
 
 <script>
-import carousel from 'vue-owl-carousel';
 import json from '../../api/film.json';
+import CarouselMovie from '../../components/Carousel/CarouselMovie';
 
 export default {
   name: 'MoviePage',
-  components: { carousel },
+  components: {
+    CarouselMovie,
+  },
   methods: {
     filterById(jsonObject, id) {
       const result = jsonObject.find(item => item.imdbID === id);
@@ -54,6 +51,7 @@ export default {
     return {
       movies: json,
       movie: this.filterById(json, this.$route.params.id),
+      thumbnails: this.filterById(json, this.$route.params.id).Images,
     };
   },
 };

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 
 import Router from 'vue-router';
-import Carousel from '@/components/Carousel';
+import CarouselHomepage from '@/components/Carousel/CarouselHomepage';
 import MovieList from '@/components/Movie/MovieList';
 import MoviePage from '@/components/Movie/MoviePage';
 
@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Carousel',
-      component: Carousel,
+      name: 'CarouselHomepage',
+      component: CarouselHomepage,
     },
     {
       path: '/movies',

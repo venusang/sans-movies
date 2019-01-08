@@ -3,20 +3,18 @@
     <thead>
       <tr role="row">
         <th v-on:click="sortColumn" scope="col" role="columnheader" id="t-title" aria-sort="none">Title</th>
-        <th scope="col" role="columnheader" id="t-tagline" aria-label="Tagline" aria-sort="none" class="u-align--left">Tagline</th>
         <th scope="col" role="columnheader" id="t-runtime" aria-label="Runtime" aria-sort="none" class="u-align--left">Runtime</th>
         <th scope="col" role="columnheader" id="t-release-date" aria-label="Release Date" aria-sort="none" class="u-align--left">Release<br />Date</th>
-        <th scope="col" role="columnheader" id="t-rating" aria-label="Rating" aria-sort="none" class="u-align--left">Rating</th>
+        <th scope="col" role="columnheader" id="t-rating" aria-label="Rating" aria-sort="none" class="u-align--left">imdb Rating</th>
         <th scope="col" role="columnheader" id="t-actions" aria-label="Actions" aria-sort="none" class="u-align--left">Actions</th>
       </tr>
     </thead>
     <tbody>
       <tr v-for="movie in movies" role="row">
-        <td role="rowheader"><a class="p-matrix__link" :href="`/movies/${movie.id}`">{{ movie.original_title }}</a></td>
-        <td role="gridcell" class="u-align--left">{{ movie.tagline }}</td>
-        <td role="gridcell" class="u-align--left">{{ movie.runtime }}</td>
-        <td role="gridcell" class="u-align--left">{{ movie.release_date }}</td>
-        <td role="gridcell" class="u-align--left">{{ movie.vote_average }}</td>
+        <td role="rowheader"><a class="p-matrix__link" :href="`/movies/${movie.imdbID}`">{{ movie.Title }}</a></td>
+        <td role="gridcell" class="u-align--left">{{ movie.Runtime }}</td>
+        <td role="gridcell" class="u-align--left">{{ movie.Released }}</td>
+        <td role="gridcell" class="u-align--left">{{ movie.imdbRating }}</td>
         <td>
           <a class="actions" href="#"><img v-bind:src="require('../../assets/icons/pencil.svg')" alt="edit"></a>
           <a class="actions" href="#"><img v-bind:src="require('../../assets/icons/trash.svg')" alt="delete"></a>

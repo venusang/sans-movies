@@ -5,6 +5,7 @@
   "author": "Venus Ang",
   "private": true,
   "scripts": {
+    "json:server": "json-server --watch db.json",
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
@@ -14,6 +15,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "json-server": "^0.14.2",
     "papaparse": "^4.6.2",
     "vanilla-framework": "^1.8.0",
     "vue": "^2.3.3",

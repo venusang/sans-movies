@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import json from '../../api/movie-listings.json';
+import json from '../../api/film.json';
 import TableExpanding from '../Table/TableExpanding';
 import TableSortable from '../Table/TableSortable';
 

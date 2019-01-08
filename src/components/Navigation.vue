@@ -15,7 +15,7 @@
       </span>
       <ul class="p-navigation__links" role="menu">
         <li class="p-navigation__link is-selected" role="menuitem">
-          <a href="/movies">Movies ({{moviesCount}})</a>
+          <a href="/movies">Movies</a>
         </li>
       </ul>
     </nav>

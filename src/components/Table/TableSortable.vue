@@ -12,7 +12,7 @@
     </thead>
     <tbody>
       <tr v-for="movie in movies" role="row">
-        <td role="rowheader"><a class="p-matrix__link" :href="`/movie/${movie.id}`">{{ movie.original_title }}</a></td>
+        <td role="rowheader"><a class="p-matrix__link" :href="`/movies/${movie.id}`">{{ movie.original_title }}</a></td>
         <td role="gridcell" class="u-align--left">{{ movie.tagline }}</td>
         <td role="gridcell" class="u-align--left">{{ movie.runtime }}</td>
         <td role="gridcell" class="u-align--left">{{ movie.release_date }}</td>

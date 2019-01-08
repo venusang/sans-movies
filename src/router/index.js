@@ -21,7 +21,7 @@ export default new Router({
       component: MovieList,
     },
     {
-      path: '/movie/:id',
+      path: '/movies/:id',
       name: 'Movie/MoviePage',
       component: MoviePage,
     },

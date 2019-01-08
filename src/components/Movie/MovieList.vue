@@ -1,6 +1,6 @@
 <template>
   <div class="movie">
-    <h1>All Movies</h1>
+    <h1>All Movies ({{moviesCount}})</h1>
     <div class="table-wrapper">
       <TableSortable :movies="movies" />
     </div>
@@ -21,6 +21,7 @@ export default {
   data() {
     return {
       movies: json,
+      moviesCount: json.length.toLocaleString(),
     };
   },
 };

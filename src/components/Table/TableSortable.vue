@@ -15,7 +15,7 @@
         <td role="gridcell" class="u-align--left">{{ movie.Runtime }}</td>
         <td role="gridcell" class="u-align--left">{{ movie.Released }}</td>
         <td role="gridcell" class="u-align--left">
-          <star-rating v-if="movie.imdbRating !== 'N/A'" :rating="`${ (movie.imdbRating / 10) * 5 }`" :read-only="true" v-bind:increment="0.1" :star-size="10"></star-rating>
+          <star-rating v-if="movie.imdbRating !== 'N/A'" :rating="movie.imdbRating | ratingAsNumber" :read-only="true" v-bind:increment="0.1" :star-size="10"></star-rating>
           <span v-else>N/A</span>
         </td>
         <td>
@@ -39,6 +39,12 @@ export default {
     movies: {
       type: Array,
       required: true,
+    },
+  },
+  filters: {
+    ratingAsNumber(number) {
+      const rating = (number / 10) * 5;
+      return rating;
     },
   },
   methods: {

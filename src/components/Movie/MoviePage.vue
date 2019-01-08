@@ -21,7 +21,7 @@
                 <td>{{movie.Genre}}</td>
                 <td>{{movie.Released}}</td>
                 <td>
-                  <star-rating v-if="movie.imdbRating !== 'N/A'" :rating="`${ (movie.imdbRating / 10) * 5 }`" :read-only="true" v-bind:increment="0.1" :star-size="10"></star-rating>
+                  <star-rating v-if="movie.imdbRating !== 'N/A'" :rating="movie.imdbRating | ratingAsNumber" :read-only="true" v-bind:increment="0.1" :star-size="10"></star-rating>
                   <span v-else>N/A</span>
                 </td>
               </tr>
@@ -46,18 +46,23 @@ export default {
     StarRating,
     CarouselMovie,
   },
+  data() {
+    return {
+      movie: this.filterById(json, this.$route.params.id),
+      thumbnails: this.filterById(json, this.$route.params.id).Images,
+    };
+  },
+  filters: {
+    ratingAsNumber(number) {
+      const rating = (number / 10) * 5;
+      return rating;
+    },
+  },
   methods: {
     filterById(jsonObject, id) {
       const result = jsonObject.find(item => item.imdbID === id);
       return result;
     },
-  },
-  data() {
-    return {
-      movies: json,
-      movie: this.filterById(json, this.$route.params.id),
-      thumbnails: this.filterById(json, this.$route.params.id).Images,
-    };
   },
 };
 </script>

@@ -13,14 +13,17 @@
                 <th scope="col">Rated</th>
                 <th scope="col">Genre</th>
                 <th scope="col">Released</th>
-                <th scope="col">imdb Rating</th>
+                <th scope="col">Rating</th>
               </tr>
               </thead>
               <tbody>
                 <td>{{movie.Rated}}</td>
                 <td>{{movie.Genre}}</td>
                 <td>{{movie.Released}}</td>
-                <td>{{movie.imdbRating}}</td>
+                <td>
+                  <star-rating v-if="movie.imdbRating !== 'N/A'" :rating="`${ (movie.imdbRating / 10) * 5 }`" :read-only="true" v-bind:increment="0.1" :star-size="10"></star-rating>
+                  <span v-else>N/A</span>
+                </td>
               </tr>
               </tbody>
             </table>
@@ -33,12 +36,14 @@
 </template>
 
 <script>
+import StarRating from 'vue-star-rating';
 import json from '../../api/film.json';
 import CarouselMovie from '../../components/Carousel/CarouselMovie';
 
 export default {
   name: 'MoviePage',
   components: {
+    StarRating,
     CarouselMovie,
   },
   methods: {

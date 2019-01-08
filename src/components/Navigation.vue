@@ -15,7 +15,7 @@
       </span>
       <ul class="p-navigation__links" role="menu">
         <li class="p-navigation__link is-selected" role="menuitem">
-          <a href="/movies">Movies</a>
+          <a href="/movies">Movies ({{moviesCount}})</a>
         </li>
       </ul>
     </nav>
@@ -23,8 +23,15 @@
 </template>
 
 <script>
+import json from '../api/movie-listings.json';
+
 export default {
   name: 'Navigation',
+  data() {
+    return {
+      moviesCount: json.length.toLocaleString(),
+    };
+  },
 };
 </script>
 

@@ -2,7 +2,7 @@
   <div class="movie">
     <h1>All Movies ({{moviesCount}})</h1>
     <div class="table-wrapper">
-      <TableExpanding :movies="movies" />
+      <!-- <TableExpanding :movies="movies" /> -->
       <TableSortable :movies="movies" />
     </div>
   </div>
